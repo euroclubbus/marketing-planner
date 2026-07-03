@@ -1,0 +1,7 @@
+{
+  "name": "eclub-marketing-planner",
+  "version": "1.0.0",
+  "scripts": {
+    "update-events": "node parser/generate-events.js"
+  }
+}

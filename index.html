@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eclub Marketing Planner</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+<style>
+:root{
+  --bg:#0F0F0F;--bg2:#1A1A1A;--bg3:#242424;
+  --border:#2E2E2E;--border2:#3A3A3A;
+  --text:#F0EEE8;--text2:#9A9890;--text3:#5A5855;
+  --accent:#534AB7;--accent2:#7F77DD;--accent-bg:#1E1C3A;
+  --green:#1D9E75;--green-bg:#0D2B20;
+  --orange:#D4832A;--orange-bg:#2B1E0D;
+  --red:#C0392B;--red-bg:#2B0D0D;
+  --radius:8px;--radius-lg:12px;
+  font-family:'DM Sans',system-ui,sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-size:13px;min-height:100vh}
+.app{max-width:1300px;margin:0 auto;padding:1.5rem}
+
+/* TOP */
+.topbar{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap}
+.logo{font-size:16px;font-weight:600}
+.logo span{color:var(--accent2)}
+.topbar-right{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap;align-items:center}
+.api-input{padding:7px 10px;border:0.5px solid var(--border2);border-radius:var(--radius);font-size:12px;background:var(--bg2);color:var(--text);font-family:'DM Mono',monospace;width:240px}
+.btn{padding:7px 14px;border-radius:var(--radius);border:0.5px solid var(--border2);background:var(--bg3);color:var(--text);font-size:12px;cursor:pointer;font-family:inherit;transition:all .15s}
+.btn:hover{border-color:var(--accent2);color:var(--accent2)}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary:hover{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-sm{padding:4px 10px;font-size:11px}
+
+/* RANGE */
+.range-row{display:flex;gap:8px;margin-bottom:1.25rem}
+.range-row button{padding:8px 18px;font-size:13px}
+.range-row button.active{background:var(--accent-bg);color:var(--accent2);border-color:var(--accent)}
+
+/* CARDS */
+.card{border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:14px 16px;margin-bottom:14px;background:var(--bg2)}
+.card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.card-title{font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px}
+.card-sub{font-size:11px;color:var(--text2);margin-top:4px}
+.card-actions{display:flex;gap:8px}
+
+/* PROGRESS */
+.progress-box{margin-top:12px}
+.progress-track{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden;margin-bottom:10px}
+.progress-fill{height:100%;background:var(--accent2);width:0%;transition:width .4s}
+.step-list{display:flex;flex-direction:column;gap:6px}
+.step{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text3)}
+.step.active{color:var(--text);font-weight:500}
+.step.done{color:var(--green)}
+.step .dot{width:14px;height:14px;border-radius:50%;border:1.5px solid currentColor;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px}
+
+/* TABLE */
+.tbl-wrap{overflow-x:auto;border:0.5px solid var(--border);border-radius:var(--radius-lg);margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{background:var(--bg);padding:8px 8px;text-align:left;font-weight:600;color:var(--text2);white-space:nowrap;border-bottom:0.5px solid var(--border);position:sticky;top:0}
+td{padding:6px 8px;border-bottom:0.5px solid var(--border);vertical-align:top;background:var(--bg2)}
+td[contenteditable]{cursor:text;min-width:110px}
+td[contenteditable]:focus{outline:1.5px solid var(--accent2);outline-offset:-1px;background:var(--accent-bg)}
+.pill{display:inline-block;font-size:10px;padding:2px 7px;border-radius:4px;white-space:nowrap;font-weight:500}
+.pill-h{background:var(--accent-bg);color:var(--accent2)}
+.load-low{background:var(--red-bg);color:#E87A7A}
+.load-mid{background:var(--orange-bg);color:var(--orange)}
+.load-high{background:var(--green-bg);color:#5DCAA5}
+
+/* EXPORT */
+.export-row{display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.export-row select{padding:7px 10px;border:0.5px solid var(--border2);border-radius:var(--radius);font-size:12px;background:var(--bg);color:var(--text);font-family:inherit}
+
+/* CALENDAR TABLE */
+.cal-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:3px;margin:1px;font-weight:500}
+.cal-h{background:var(--accent-bg);color:var(--accent2)}
+.cal-s{background:var(--green-bg);color:#5DCAA5}
+.cal-e{background:var(--orange-bg);color:var(--orange)}
+.cal-n{background:var(--red-bg);color:#E87A7A}
+
+.empty{text-align:center;padding:2rem;color:var(--text3);font-size:12px}
+#analysisText h1,#analysisText h2,#analysisText h3{font-size:13px;font-weight:600;color:var(--accent2);margin:10px 0 4px}
+#analysisText ul,#analysisText ol{padding-left:18px;margin:4px 0}
+#analysisText li{margin:3px 0;color:var(--text)}
+#analysisText strong{color:var(--text);font-weight:600}
+#analysisText p{margin:4px 0}
+.hint{font-size:11px;color:var(--text2);line-height:1.5;margin-top:8px;padding:8px 10px;background:var(--bg);border-radius:var(--radius)}
+.field-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.field-row input[type=file]{font-size:11px;color:var(--text2)}
+</style>
+</head>
+<body>
+<div class="app">
+
+<div class="topbar">
+  <span class="logo">eclub <span>Marketing Planner</span></span>
+  <div class="topbar-right">
+    <input class="api-input" type="password" id="geminiKey" placeholder="Gemini API Key (aistudio.google.com)">
+    <button class="btn btn-sm" id="saveKeyBtn"><i class="ti ti-key"></i> Зберегти ключ</button>
+  </div>
+</div>
+
+<div class="range-row" id="rangeRow">
+  <button data-days="7">7 днів</button>
+  <button data-days="14" class="active">14 днів</button>
+  <button data-days="30">30 днів</button>
+  <button data-days="45">45 днів</button>
+</div>
+
+<!-- CALENDAR -->
+<div class="card">
+  <div class="card-head">
+    <div>
+      <div class="card-title"><i class="ti ti-calendar-event"></i> Календар подій</div>
+      <div class="card-sub" id="calStatus">Не сформовано · автооновлення щонеділі вночі (через GitHub Actions)</div>
+    </div>
+    <div class="card-actions">
+      <button class="btn" id="loadAutoCalBtn"><i class="ti ti-cloud-download"></i> Завантажити готовий (з cron)</button>
+      <button class="btn btn-primary" id="buildCalBtn"><i class="ti ti-calendar-plus"></i> Скласти календар подій</button>
+    </div>
+  </div>
+  <div class="progress-box" id="calProgress" style="display:none">
+    <div class="progress-track"><div class="progress-fill" id="calFill"></div></div>
+    <div class="step-list" id="calSteps">
+      <div class="step" data-i="0"><span class="dot"></span> Підготовка списку джерел (45 сайтів)</div>
+      <div class="step" data-i="1"><span class="dot"></span> Формування запиту до Gemini</div>
+      <div class="step" data-i="2"><span class="dot"></span> Очікування відповіді Gemini</div>
+      <div class="step" data-i="3"><span class="dot"></span> Розбір та структурування календаря</div>
+      <div class="step" data-i="4"><span class="dot"></span> Готово</div>
+    </div>
+  </div>
+  <div class="tbl-wrap" id="calTableWrap" style="display:none">
+    <table>
+      <thead><tr><th>Дата</th><th>UA</th><th>DE</th><th>AT</th><th>SK</th><th>HU</th><th>Новини / тригери</th></tr></thead>
+      <tbody id="calBody"></tbody>
+    </table>
+  </div>
+  <div class="hint">Реальний скан 45 джерел відбувається автоматично щонеділі вночі (GitHub Actions). Кнопка «Скласти календар подій» надсилає запит до Gemini вручну на основі його знань — для термінових випадків. Файл результату: <code>parser/output/events.json</code>.</div>
+</div>
+
+<!-- BUS LOAD IMPORT -->
+<div class="card">
+  <div class="card-head">
+    <div>
+      <div class="card-title"><i class="ti ti-bus"></i> Завантаженість рейсів</div>
+      <div class="card-sub" id="loadStatus">Файл не імпортовано</div>
+    </div>
+    <div class="card-actions">
+      <input type="file" id="loadFile" accept=".xlsx,.xls,.csv">
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT PLAN -->
+<div class="card">
+  <div class="card-head">
+    <div>
+      <div class="card-title"><i class="ti ti-clipboard-text"></i> Контент-план</div>
+      <div class="card-sub" id="planStatus">Спочатку складіть календар подій (або завантажте готовий)</div>
+    </div>
+    <div class="card-actions">
+      <button class="btn" id="analyzeBtn" disabled><i class="ti ti-sparkles"></i> Аналіз плану</button>
+      <button class="btn btn-primary" id="buildPlanBtn"><i class="ti ti-wand"></i> Скласти контент план</button>
+    </div>
+  </div>
+  <div class="progress-box" id="planProgress" style="display:none">
+    <div class="progress-track"><div class="progress-fill" id="planFill"></div></div>
+    <div class="step-list" id="planSteps">
+      <div class="step" data-i="0"><span class="dot"></span> Перевірка календаря подій на період</div>
+      <div class="step" data-i="1"><span class="dot"></span> Зіставлення з завантаженістю рейсів</div>
+      <div class="step" data-i="2"><span class="dot"></span> Запит до Gemini: генерація контент-плану</div>
+      <div class="step" data-i="3"><span class="dot"></span> Розбір відповіді та розподіл по каналах</div>
+      <div class="step" data-i="4"><span class="dot"></span> Готово — план редагований</div>
+    </div>
+  </div>
+  <div class="tbl-wrap" id="planTableWrap" style="display:none">
+    <table>
+      <thead><tr><th>Дата</th><th>Привід</th><th>Рубрика</th><th>Реклама</th><th>Instagram</th><th>FB/TG</th><th>TikTok</th><th>Threads</th><th>YouTube</th></tr></thead>
+      <tbody id="planBody"></tbody>
+    </table>
+  </div>
+  <div class="export-row" id="exportRow" style="display:none">
+    <span style="color:var(--text2)">Експорт:</span>
+    <select id="exportSelect">
+      <option value="all">Весь план (усі канали)</option>
+      <option value="ig">Instagram</option>
+      <option value="fbtg">Facebook + Telegram</option>
+      <option value="tt">TikTok</option>
+      <option value="th">Threads</option>
+      <option value="yt">YouTube</option>
+    </select>
+    <button class="btn" id="exportBtn"><i class="ti ti-download"></i> Завантажити Excel</button>
+  </div>
+  <div class="tbl-wrap" id="analysisWrap" style="display:none;margin-top:12px">
+    <div style="padding:10px 12px;font-size:12px;line-height:1.6" id="analysisText"></div>
+  </div>
+</div>
+
+</div>
+
+<script>
+const RUBRICS = ['Про нас','Наші маршрути','Сторітелінг','Офіційне звернення','Реклама','Вікторина/Розіграш','Відгуки/Інтерв\'ю','Колаборація'];
+const COUNTRIES = ['UA','DE','AT','SK','HU'];
+const SOURCES_SUMMARY = "Україна: ukrinform.ua, suspilne.media, babel.ua, dw.com/uk, liveuamap.com, pravda.com.ua, unian.ua, tsn.ua, hromadske.ua, zn.ua, mfa.gov.ua. Німеччина: tagesschau.de, zeit.de, spiegel.de, faz.net, germany4ukraine.de, auswaertiges-amt.de, kmk.org (шкільні канікули). Австрія: orf.at, derstandard.at, diepresse.com, krone.at, bmeia.gv.at/ukraine, bmbwf.gv.at (канікули). Словаччина: sme.sk, aktuality.sk, pravda.sk, dennikn.sk, minedu.sk (канікули). Угорщина: index.hu, hvg.hu, telex.hu, 444.hu, oktatas.hu (канікули). Спільноти: ukrainer.net, forum.germany.ua, Facebook-групи українців DE/AT/SK/HU, Telegram-канали, Reddit r/ukraine, r/ukraineDE.";
+
+let selectedRange = 14;
+let calendarData = null;
+let busLoadData = [];
+let planData = [];
+
+// ---------- API KEY ----------
+const keyInput = document.getElementById('geminiKey');
+keyInput.value = localStorage.getItem('gemini_key') || '';
+document.getElementById('saveKeyBtn').onclick = () => {
+  localStorage.setItem('gemini_key', keyInput.value.trim());
+  const b = document.getElementById('saveKeyBtn');
+  b.innerHTML = '<i class="ti ti-check"></i> Збережено';
+  setTimeout(()=>b.innerHTML='<i class="ti ti-key"></i> Зберегти ключ',1500);
+};
+
+// ---------- RANGE ----------
+document.getElementById('rangeRow').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  document.querySelectorAll('#rangeRow button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  selectedRange = parseInt(b.dataset.days);
+});
+
+// ---------- PROGRESS HELPER ----------
+function runSteps(boxId, fillId, listId, durations){
+  const box=document.getElementById(boxId), fill=document.getElementById(fillId);
+  const steps=[...document.querySelectorAll('#'+listId+' .step')];
+  box.style.display='block';
+  steps.forEach(s=>{s.classList.remove('active','done');s.querySelector('.dot').textContent='';});
+  fill.style.width='0%';
+  return new Promise(resolve=>{
+    let i=0;
+    function next(){
+      if(i>0){const p=steps[i-1];p.classList.remove('active');p.classList.add('done');p.querySelector('.dot').innerHTML='<i class="ti ti-check" style="font-size:9px"></i>';}
+      if(i<steps.length){
+        steps[i].classList.add('active');
+        fill.style.width=Math.round(((i+1)/steps.length)*100)+'%';
+        const d=durations&&durations[i]?durations[i]:600;
+        setTimeout(()=>{i++;next();}, d);
+      } else resolve();
+    }
+    next();
+  });
+}
+
+// ---------- GEMINI CALL ----------
+async function callGemini(prompt){
+  const key = localStorage.getItem('gemini_key');
+  if(!key) throw new Error('Введіть Gemini API ключ і натисніть «Зберегти ключ»');
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
+  const res = await fetch(url,{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({contents:[{parts:[{text:prompt}]}]})
+  });
+  const data = await res.json();
+  if(data.error) throw new Error(data.error.message || 'Помилка Gemini API');
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  const cleaned = text.replace(/```json/g,'').replace(/```/g,'').trim();
+  return JSON.parse(cleaned);
+}
+
+function dateRange(n){
+  const out=[]; const today=new Date();
+  for(let i=0;i<n;i++){const d=new Date(today);d.setDate(d.getDate()+i);out.push(d.toISOString().slice(0,10));}
+  return out;
+}
+
+// ---------- CALENDAR ----------
+document.getElementById('buildCalBtn').onclick = async ()=>{
+  const dates = dateRange(selectedRange);
+  const from=dates[0], to=dates[dates.length-1];
+  const prompt = `Ти аналітик подій для автобусного перевізника eclub.com.ua (маршрути Україна ↔ Німеччина/Австрія/Словаччина/Угорщина/Молдова).
+
+Знайди актуальні події для періоду з ${from} по ${to} для країн: Україна (UA), Німеччина (DE), Австрія (AT), Словаччина (SK), Угорщина (HU).
+
+Орієнтуйся на тематику цих джерел: ${SOURCES_SUMMARY}
+
+Знайди для кожної дати в діапазоні:
+- Державні свята
+- Шкільні/студентські канікули (початок і кінець)
+- Великі фестивалі/концерти/спортивні події
+- Новини що стосуються українців за кордоном (зміни віз, прав, перетину кордону)
+
+Поверни ТІЛЬКИ JSON масив, без жодного тексту до/після:
+[{"date":"YYYY-MM-DD","country":"UA|DE|AT|SK|HU","event_name":"string","event_type":"holiday|vacation_start|vacation_end|festival|news","relevance_for_bus_company":"high|medium|low"}]`;
+
+  await runSteps('calProgress','calFill','calSteps',[400,400,1200,800,300]);
+  try{
+    const result = await callGemini(prompt);
+    calendarData = {from,to,range:selectedRange,events:result};
+    renderCalendar();
+    document.getElementById('calStatus').textContent = `Сформовано вручну · ${from} – ${to} (${selectedRange} днів) · ${result.length} подій`;
+  }catch(err){
+    document.getElementById('calStatus').textContent = 'Помилка: '+err.message;
+  }
+};
+
+document.getElementById('loadAutoCalBtn').onclick = async ()=>{
+  try{
+    const res = await fetch('parser/output/events.json');
+    if(!res.ok) throw new Error('Файл ще не створений (запустіть GitHub Actions хоча б раз)');
+    const json = await res.json();
+    calendarData = json;
+    renderCalendar();
+    document.getElementById('calStatus').textContent = `Завантажено з cron · оновлено: ${json.generated_at||'?'} · ${json.events?.length||0} подій`;
+  }catch(err){
+    document.getElementById('calStatus').textContent = 'Помилка: '+err.message;
+  }
+};
+
+function renderCalendar(){
+  const wrap=document.getElementById('calTableWrap'), body=document.getElementById('calBody');
+  if(!calendarData || !calendarData.events){wrap.style.display='none';return;}
+  const dates = dateRange(calendarData.range || selectedRange);
+  let html='';
+  for(const d of dates){
+    const evs = calendarData.events.filter(e=>e.date===d);
+    const cells = COUNTRIES.map(c=>{
+      const ce = evs.filter(e=>e.country===c);
+      if(!ce.length) return '<td class="cal-n">—</td>';
+      return '<td>'+ce.map(e=>{
+        const cls = e.event_type==='holiday'?'cal-h':e.event_type==='festival'?'cal-e':'cal-s';
+        return `<span class="cal-tag ${cls}">${e.event_name}</span>`;
+      }).join('')+'</td>';
+    }).join('');
+    const news = evs.filter(e=>e.event_type==='news');
+    const newsHtml = news.length ? news.map(e=>`<span class="cal-tag cal-n">${e.event_name}</span>`).join('') : '—';
+    html += `<tr><td><b>${d}</b></td>${cells}<td>${newsHtml}</td></tr>`;
+  }
+  body.innerHTML = html;
+  wrap.style.display='block';
+}
+
+// ---------- BUS LOAD IMPORT ----------
+document.getElementById('loadFile').onchange = (e)=>{
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev=>{
+    try{
+      const wb = XLSX.read(ev.target.result,{type:'binary'});
+      const ws = wb.Sheets[wb.SheetNames[0]];
+      const rows = XLSX.utils.sheet_to_json(ws,{defval:''});
+      busLoadData = rows;
+      document.getElementById('loadStatus').textContent = `Імпортовано: ${file.name} · ${rows.length} рядків`;
+    }catch(err){
+      document.getElementById('loadStatus').textContent = 'Помилка читання файлу: '+err.message;
+    }
+  };
+  reader.readAsBinaryString(file);
+};
+
+// ---------- CONTENT PLAN ----------
+document.getElementById('buildPlanBtn').onclick = async ()=>{
+  const dates = dateRange(selectedRange);
+  const from=dates[0], to=dates[dates.length-1];
+
+  await runSteps('planProgress','planFill','planSteps',[400, 400, 0, 800, 300]);
+
+  // step: ensure calendar exists for this range
+  if(!calendarData || calendarData.range !== selectedRange || calendarData.from !== from){
+    document.querySelector('#planSteps [data-i="0"]').innerHTML = '<span class="dot"><i class="ti ti-loader-2" style="font-size:9px"></i></span> Календар відсутній — будуємо автоматично...';
+    try{
+      const calPrompt = `Ти аналітик подій для автобусного перевізника eclub.com.ua. Знайди події з ${from} по ${to} для країн UA, DE, AT, SK, HU (свята, канікули, фестивалі, новини для українців за кордоном). Орієнтир джерел: ${SOURCES_SUMMARY}. Поверни ТІЛЬКИ JSON масив: [{"date":"YYYY-MM-DD","country":"UA|DE|AT|SK|HU","event_name":"string","event_type":"holiday|vacation_start|vacation_end|festival|news","relevance_for_bus_company":"high|medium|low"}]`;
+      const events = await callGemini(calPrompt);
+      calendarData = {from,to,range:selectedRange,events};
+      renderCalendar();
+    }catch(err){
+      document.getElementById('planStatus').textContent = 'Помилка календаря: '+err.message;
+      return;
+    }
+  }
+
+  const busLoadSummary = busLoadData.length
+    ? JSON.stringify(busLoadData.slice(0,200))
+    : "Дані про завантаженість рейсів не імпортовано — орієнтуйся тільки на події та сезонність.";
+
+  const planPrompt = `Ти SMM-стратег для автобусного перевізника eclub.com.ua. 27 років на ринку, прямі рейси Україна↔Європа (Німеччина, Австрія, Словаччина, Угорщина, Молдова).
+
+Період: ${from} – ${to} (${selectedRange} днів)
+
+КАЛЕНДАР ПОДІЙ:
+${JSON.stringify(calendarData.events)}
+
+ЗАВАНТАЖЕНІСТЬ РЕЙСІВ (якщо є):
+${busLoadSummary}
+
+РУБРИКИ (використовуй усі, ротуй, не повторюй однакову рубрику два дні підряд):
+${RUBRICS.map((r,i)=>(i+1)+'. '+r).join('\\n')}
+
+ПРАВИЛА:
+- Якщо подія важлива (relevance=high) — анонс за 14-21 день ДО події з акцією/активністю, плюс пост у день події
+- Канікули/свята — інформувати не пізніше ніж за 30 днів до початку
+- Якщо завантаженість рейсу нижче 50% на дату — рубрика "Реклама" з прямим закликом купити квиток
+- Якщо завантаженість вище 80% — соціальний доказ ("залишились місця"), без прямого тиску
+- Якщо даних про завантаженість немає — орієнтуйся на сезонність і інфоприводи
+
+СОЦМЕРЕЖІ:
+- Instagram: 1 допис/день, емоційний короткий текст
+- Facebook+Telegram: 1 спільний допис/день, дружній розгорнутий
+- TikTok: 1 сценарій відео/день, динамічний
+- Threads: 3 короткі думки на день (масив з 3 рядків)
+- YouTube: рівно 3 теми на весь період ${selectedRange} днів (якщо ${selectedRange}>=14), для інших днів null
+
+Поверни ТІЛЬКИ JSON масив, без тексту до/після, рівно ${selectedRange} елементів (по одному на кожну дату з діапазону ${from}..${to}):
+[{"date":"YYYY-MM-DD","trigger":"короткий привід","rubric":"одна з рубрик вище","load_type":"Активний продаж|Нативно|Інформаційно","instagram":"текст","fb_tg":"текст","tiktok":"сценарій","threads":["d1","d2","d3"],"youtube":"тема або null"}]`;
+
+  try{
+    const result = await callGemini(planPrompt);
+    planData = result;
+    renderPlan();
+    document.getElementById('planStatus').textContent = `Готово · ${from} – ${to} · ${result.length} днів · усі поля редаговані`;
+    document.getElementById('analyzeBtn').disabled = false;
+    document.getElementById('exportRow').style.display='flex';
+  }catch(err){
+    document.getElementById('planStatus').textContent = 'Помилка: '+err.message;
+  }
+};
+
+function renderPlan(){
+  const wrap=document.getElementById('planTableWrap'), body=document.getElementById('planBody');
+  let html='';
+  for(const row of planData){
+    const loadCls = row.load_type==='Активний продаж'?'load-low':row.load_type==='Нативно'?'load-mid':'load-high';
+    const threads = Array.isArray(row.threads) ? row.threads.join(' | ') : (row.threads||'');
+    html += `<tr>
+      <td><b>${row.date}</b></td>
+      <td contenteditable="true">${row.trigger||''}</td>
+      <td><span class="pill pill-h">${row.rubric||''}</span></td>
+      <td><span class="pill ${loadCls}">${row.load_type||''}</span></td>
+      <td contenteditable="true">${row.instagram||''}</td>
+      <td contenteditable="true">${row.fb_tg||''}</td>
+      <td contenteditable="true">${row.tiktok||''}</td>
+      <td contenteditable="true">${threads}</td>
+      <td contenteditable="true">${row.youtube||''}</td>
+    </tr>`;
+  }
+  body.innerHTML = html;
+  wrap.style.display='block';
+}
+
+// ---------- ANALYSIS ----------
+document.getElementById('analyzeBtn').onclick = async ()=>{
+  // read current (possibly edited) table back into planData
+  const rows = document.querySelectorAll('#planBody tr');
+  rows.forEach((tr,i)=>{
+    const cells = tr.querySelectorAll('td');
+    planData[i].trigger = cells[1].textContent;
+    planData[i].instagram = cells[4].textContent;
+    planData[i].fb_tg = cells[5].textContent;
+    planData[i].tiktok = cells[6].textContent;
+    planData[i].threads = cells[7].textContent.split('|').map(s=>s.trim());
+    planData[i].youtube = cells[8].textContent;
+  });
+
+  const prompt = `Ти професійний SMM-аудитор. Оціни цей контент-план для автобусного перевізника eclub.com.ua і запропонуй виправлення.
+
+КОНТЕНТ-ПЛАН:
+${JSON.stringify(planData)}
+
+Перевір:
+- Баланс рубрик (немає однакових 2 дні підряд, всі рубрики використані)
+- Логіку анонсів (важливі події анонсовані заздалегідь)
+- Якість текстів для кожної соцмережі
+- Чи відповідає тип реклами завантаженості
+
+Дай короткий звіт у форматі Markdown: список знайдених проблем і конкретні рекомендації. Без зайвого вступу, до 300 слів.`;
+
+  const wrap = document.getElementById('analysisWrap');
+  const txt = document.getElementById('analysisText');
+  wrap.style.display='block';
+  txt.textContent = 'Аналізуємо...';
+  try{
+    const key = localStorage.getItem('gemini_key');
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
+    const res = await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:prompt}]}]})});
+    const data = await res.json();
+    if(data.error) throw new Error(data.error.message);
+    txt.innerHTML = marked.parse(data.candidates?.[0]?.content?.parts?.[0]?.text || 'Порожня відповідь');
+  }catch(err){
+    txt.textContent = 'Помилка: '+err.message;
+  }
+};
+
+// ---------- EXPORT ----------
+document.getElementById('exportBtn').onclick = ()=>{
+  const mode = document.getElementById('exportSelect').value;
+  const cols = {
+    all: ['date','trigger','rubric','load_type','instagram','fb_tg','tiktok','threads','youtube'],
+    ig: ['date','rubric','instagram'],
+    fbtg: ['date','rubric','fb_tg'],
+    tt: ['date','rubric','tiktok'],
+    th: ['date','rubric','threads'],
+    yt: ['date','youtube']
+  }[mode];
+  const headerNames = {date:'Дата',trigger:'Привід',rubric:'Рубрика',load_type:'Тип реклами',instagram:'Instagram',fb_tg:'Facebook/Telegram',tiktok:'TikTok',threads:'Threads',youtube:'YouTube'};
+  const rows = [cols.map(c=>headerNames[c])];
+  for(const r of planData){
+    rows.push(cols.map(c=>{
+      let v = r[c];
+      if(Array.isArray(v)) v = v.join(' | ');
+      return v==null?'':v;
+    }));
+  }
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+  XLSX.utils.book_append_sheet(wb, ws, 'Content Plan');
+  XLSX.utils.writeFile(wb, `eclub_content_plan_${mode}_${Date.now()}.xlsx`);
+};
+
+// ---------- PERSIST ----------
+function saveState(){
+  try{
+    if(calendarData) localStorage.setItem('eclub_cal', JSON.stringify(calendarData));
+    if(planData.length) localStorage.setItem('eclub_plan', JSON.stringify(planData));
+  }catch(e){}
+}
+function loadState(){
+  try{
+    const cal = localStorage.getItem('eclub_cal');
+    if(cal){
+      calendarData = JSON.parse(cal);
+      renderCalendar();
+      document.getElementById('calStatus').textContent = 'Відновлено з кешу · '+calendarData.from+' – '+calendarData.to+' · '+(calendarData.events&&calendarData.events.length||0)+' подій';
+    }
+    const plan = localStorage.getItem('eclub_plan');
+    if(plan){
+      planData = JSON.parse(plan);
+      renderPlan();
+      document.getElementById('planStatus').textContent = 'Відновлено з кешу · '+planData.length+' днів';
+      document.getElementById('analyzeBtn').disabled = false;
+      document.getElementById('exportRow').style.display='flex';
+    }
+  }catch(e){}
+}
+const _origRCal = renderCalendar, _origRPlan = renderPlan;
+renderCalendar = function(){ _origRCal(); saveState(); };
+renderPlan = function(){ _origRPlan(); saveState(); };
+
+const clearBtn = document.createElement('button');
+clearBtn.className = 'btn btn-sm';
+clearBtn.innerHTML = '<i class="ti ti-trash"></i> Очистити кеш';
+clearBtn.onclick = ()=>{
+  localStorage.removeItem('eclub_cal'); localStorage.removeItem('eclub_plan');
+  calendarData=null; planData=[];
+  document.getElementById('calTableWrap').style.display='none';
+  document.getElementById('planTableWrap').style.display='none';
+  document.getElementById('exportRow').style.display='none';
+  document.getElementById('analysisWrap').style.display='none';
+  document.getElementById('calStatus').textContent='Не сформовано';
+  document.getElementById('planStatus').textContent='Спочатку складіть календар подій';
+  document.getElementById('analyzeBtn').disabled=true;
+};
+document.querySelector('.topbar-right').appendChild(clearBtn);
+
+// ---------- INIT ----------
+loadState();
+if(!calendarData) document.getElementById('loadAutoCalBtn').click();
+</script>
+</body>
+</html>
