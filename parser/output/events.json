@@ -1,231 +1,385 @@
 {
-  "generated_at": "2026-07-03T11:28:40.044Z",
-  "from": "2026-07-03",
-  "to": "2026-08-16",
+  "generated_at": "2026-07-05T06:08:56.141Z",
+  "from": "2026-07-05",
+  "to": "2026-08-18",
   "range": 45,
   "events": [
     {
-      "date": "2026-07-03",
-      "country": "UA",
-      "event_name": "Leopolis Jazz Fest (Львів) - орієнтовний початок",
-      "event_type": "festival",
+      "date": "2026-07-05",
+      "country": "SK",
+      "event_name": "День Святих Кирила і Мефодія",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-07-03",
-      "country": "HU",
-      "event_name": "Balaton Sound Festival (Озеро Балатон) - орієнтовний початок",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-07-04",
+      "date": "2026-07-05",
       "country": "AT",
-      "event_name": "Початок літніх шкільних канікул (Відень, Нижня Австрія, Бургенланд) - орієнтовно",
+      "event_name": "Початок літніх шкільних канікул (Східна Австрія: Відень, Нижня Австрія, Бургенланд)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-07-04",
-      "country": "DE",
-      "event_name": "Christopher Street Day (CSD) / Pride Parade (Кельн) - орієнтовно",
+      "date": "2026-07-05",
+      "country": "HU",
+      "event_name": "Фестиваль Balaton Sound (початок)",
       "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-05",
+      "country": "UA",
+      "event_name": "Загальна інформація для українських громадян щодо літніх подорожей",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-05",
+      "country": "DE",
+      "event_name": "Загальна інформація для українських громадян щодо літніх подорожей",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-05",
+      "country": "AT",
+      "event_name": "Загальна інформація для українських громадян щодо літніх подорожей",
+      "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-07-05",
       "country": "SK",
-      "event_name": "День святих Кирила та Мефодія",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-07-06",
-      "country": "SK",
-      "event_name": "Відзначення Дня святих Кирила та Мефодія (якщо 05.07 – вихідний)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-07-06",
-      "country": "DE",
-      "event_name": "Початок літніх шкільних канікул (Північний Рейн-Вестфалія) - орієнтовно",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-07-06",
-      "country": "DE",
-      "event_name": "Оновлення щодо програм працевлаштування для українців",
+      "event_name": "Загальна інформація для українських громадян щодо літніх подорожей",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-07-07",
-      "country": "UA",
-      "event_name": "Atlas Weekend (Київ) - орієнтовний початок",
+      "date": "2026-07-05",
+      "country": "HU",
+      "event_name": "Загальна інформація для українських громадян щодо літніх подорожей",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-06",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Мекленбург-Передня Померанія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-06",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Північний Рейн-Вестфалія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-06",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Саксонія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-06",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Тюрингія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-06",
+      "country": "HU",
+      "event_name": "Фестиваль Balaton Sound (завершення)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-07-09",
-      "country": "DE",
-      "event_name": "Початок літніх шкільних канікул (Берлін, Бранденбург, Гамбург, Мекленбург-Передня Померанія) - орієнтовно",
-      "event_type": "vacation_start",
+      "date": "2026-07-10",
+      "country": "SK",
+      "event_name": "Фестиваль Pohoda (початок)",
+      "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-07-11",
       "country": "AT",
-      "event_name": "Початок літніх шкільних канікул (Верхня Австрія, Зальцбург, Штирія, Каринтія, Тіроль, Форарльберг) - орієнтовно",
+      "event_name": "Початок літніх шкільних канікул (Західна Австрія: Каринтія, Верхня Австрія, Зальцбург, Штирія, Тіроль, Форарльберг)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-13",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Берлін)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-13",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Бранденбург)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-13",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Гессен)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-13",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Рейнланд-Пфальц)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-13",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Саарланд)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-07-13",
       "country": "SK",
-      "event_name": "Pohoda Festival (Тренчин) - орієнтовний початок",
+      "event_name": "Фестиваль Pohoda (завершення)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-07-13",
+      "date": "2026-07-20",
       "country": "DE",
-      "event_name": "Початок літніх шкільних канікул (Гессен, Рейнланд-Пфальц, Саар, Саксонія, Саксонія-Ангальт, Тюрінгія) - орієнтовно",
+      "event_name": "Початок літніх шкільних канікул (Бремен)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-07-13",
-      "country": "AT",
-      "event_name": "Нові можливості для інтеграції українців та мовні курси",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-07-20",
-      "country": "UA",
-      "event_name": "Інформація про програми відбудови та підтримки репатріації",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Нижня Саксонія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-07-25",
+      "date": "2026-07-20",
       "country": "DE",
-      "event_name": "Початок літніх шкільних канікул (Баден-Вюртемберг, Баварія) - орієнтовно",
+      "event_name": "Початок літніх шкільних канікул (Саксонія-Ангальт)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-20",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Шлезвіг-Гольштейн)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-07-25",
+      "country": "DE",
+      "event_name": "Байройтський фестиваль (початок, триває до кінця серпня)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-25",
+      "country": "DE",
+      "event_name": "Christopher Street Day (CSD) Берлін",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-25",
+      "country": "HU",
+      "event_name": "Гран-прі Формули-1 Угорщини (початок)",
+      "event_type": "sport",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-26",
       "country": "AT",
-      "event_name": "Зальцбурзький фестиваль (Salzburg Festival) - орієнтовний початок",
+      "event_name": "Зальцбурзький фестиваль (початок, триває до кінця серпня)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-07-27",
-      "country": "DE",
-      "event_name": "Christopher Street Day (CSD) / Pride Parade (Берлін) - орієнтовно",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
+      "country": "HU",
+      "event_name": "Гран-прі Формули-1 Угорщини (завершення)",
+      "event_type": "sport",
+      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-07-28",
       "country": "UA",
       "event_name": "День Української Державності",
       "event_type": "holiday",
-      "relevance_for_bus_company": "high"
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-07-28",
-      "country": "HU",
-      "event_name": "Оновлення щодо консульських послуг для українців та культурних заходів",
+      "country": "UA",
+      "event_name": "Оновлення щодо програм підтримки та інтеграції для української діаспори",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
+      "date": "2026-07-28",
+      "country": "DE",
+      "event_name": "Оновлення щодо програм підтримки та інтеграції для української діаспори",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-28",
+      "country": "AT",
+      "event_name": "Оновлення щодо програм підтримки та інтеграції для української діаспори",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-28",
+      "country": "SK",
+      "event_name": "Оновлення щодо програм підтримки та інтеграції для української діаспори",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-28",
+      "country": "HU",
+      "event_name": "Оновлення щодо програм підтримки та інтеграції для української діаспори",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-07-30",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Баден-Вюртемберг)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-07-30",
+      "country": "DE",
+      "event_name": "Початок літніх шкільних канікул (Баварія)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
       "date": "2026-08-01",
       "country": "DE",
-      "event_name": "Wacken Open Air Festival (Вакен) - орієнтовний початок",
+      "event_name": "Фестиваль Wacken Open Air (початок)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-08-03",
-      "country": "SK",
-      "event_name": "Інформація про підтримку українських сімей та дітей у школах",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-05",
       "country": "DE",
-      "event_name": "Оновлення щодо статусу тимчасового захисту та соціальних виплат",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-10",
-      "country": "HU",
-      "event_name": "Sziget Festival (Будапешт) - орієнтовний початок",
+      "event_name": "Фестиваль Wacken Open Air (завершення)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-08-12",
+      "date": "2026-08-07",
+      "country": "HU",
+      "event_name": "Фестиваль Sziget (початок)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-08-14",
+      "country": "HU",
+      "event_name": "Фестиваль Sziget (завершення)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-08-14",
+      "country": "SK",
+      "event_name": "Фестиваль Grape (початок)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-08-15",
+      "country": "AT",
+      "event_name": "Успіння Пресвятої Богородиці",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-08-15",
       "country": "DE",
-      "event_name": "Кінець літніх шкільних канікул (Бремен, Нижня Саксонія) - орієнтовно",
+      "event_name": "Завершення літніх шкільних канікул (Мекленбург-Передня Померанія)",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-08-14",
-      "country": "AT",
-      "event_name": "Зальцбурзький фестиваль (Salzburg Festival) - триває",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-14",
-      "country": "HU",
-      "event_name": "Sziget Festival (Будапешт) - триває",
-      "event_type": "festival",
+      "date": "2026-08-15",
+      "country": "DE",
+      "event_name": "Завершення літніх шкільних канікул (Саксонія)",
+      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-08-15",
       "country": "DE",
-      "event_name": "Вознесіння Діви Марії (державне свято в Баварії та Саарі)",
-      "event_type": "holiday",
+      "event_name": "Завершення літніх шкільних канікул (Тюрингія)",
+      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-15",
-      "country": "AT",
-      "event_name": "Вознесіння Діви Марії (державне свято)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-15",
-      "country": "SK",
-      "event_name": "Новини про культурні обміни та події для українців у Словаччині",
-      "event_type": "news",
-      "relevance_for_bus_company": "low"
     },
     {
       "date": "2026-08-16",
+      "country": "SK",
+      "event_name": "Фестиваль Grape (завершення)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-08-17",
       "country": "UA",
-      "event_name": "Новини про прикордонний контроль та перетин кордону",
+      "event_name": "Підготовка до навчального року для українських студентів за кордоном",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-08-16",
+      "date": "2026-08-17",
+      "country": "DE",
+      "event_name": "Підготовка до навчального року д��я українських студентів за кордоном",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-08-17",
+      "country": "AT",
+      "event_name": "Підготовка до навчального року для українських студентів за кордоном",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-08-17",
+      "country": "SK",
+      "event_name": "Підготовка до навчального року для українських студентів за кордоном",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-08-17",
       "country": "HU",
-      "event_name": "Sziget Festival (Будапешт) - орієнтовний кінець",
-      "event_type": "festival",
+      "event_name": "Підготовка до навчального року для українських студентів за кордоном",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-08-18",
+      "country": "DE",
+      "event_name": "Завершення літніх шкільних канікул (Північний Рейн-Вестфалія)",
+      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     }
   ]
