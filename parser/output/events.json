@@ -1,238 +1,84 @@
 {
-  "generated_at": "2026-08-16T03:02:39.571Z",
-  "from": "2026-08-16",
-  "to": "2026-09-29",
+  "generated_at": "2026-08-23T03:04:49.292Z",
+  "from": "2026-08-23",
+  "to": "2026-10-06",
   "range": 45,
   "events": [
     {
-      "date": "2026-08-16",
-      "country": "DE",
-      "event_name": "End of Summer Vacation (early states)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-16",
-      "country": "DE",
-      "event_name": "News: Continued integration support for Ukrainians in Germany",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-16",
-      "country": "AT",
-      "event_name": "News: Information on support programs for Ukrainians in Austria",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-16",
-      "country": "SK",
-      "event_name": "News: Updates on humanitarian aid and integration for Ukrainians in Slovakia",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-16",
-      "country": "HU",
-      "event_name": "News: Border crossing and asylum information for Ukrainians in Hungary",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-16",
+      "date": "2026-08-24",
       "country": "UA",
-      "event_name": "News: Updates on reconstruction and humanitarian efforts in Ukraine",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-08-20",
-      "country": "DE",
-      "event_name": "End of Summer Vacation (many northern/eastern states)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-30",
-      "country": "DE",
-      "event_name": "End of Summer Vacation (some central/western states)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-31",
-      "country": "UA",
-      "event_name": "End of Summer Vacation",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-31",
-      "country": "SK",
-      "event_name": "End of Summer Vacation",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-08-31",
-      "country": "HU",
-      "event_name": "End of Summer Vacation",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-01",
-      "country": "UA",
-      "event_name": "Start of New School Year",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-01",
-      "country": "SK",
-      "event_name": "Constitution Day",
+      "event_name": "День Незалежності України",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-09-01",
       "country": "SK",
-      "event_name": "Start of New School Year",
-      "event_type": "vacation_start",
+      "event_name": "День Конституції Словацької Республіки",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-09-01",
-      "country": "HU",
-      "event_name": "Start of New School Year",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-01",
-      "country": "DE",
-      "event_name": "News: Educational opportunities for Ukrainian children in Germany",
-      "event_type": "news",
+      "date": "2026-09-07",
+      "country": "AT",
+      "event_name": "MQ Vienna Fashion Week (орієнтовний початок)",
+      "event_type": "festival",
       "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-09-01",
-      "country": "AT",
-      "event_name": "End of Summer Vacation (some states)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-02",
-      "country": "AT",
-      "event_name": "Start of New School Year (some states)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-05",
-      "country": "DE",
-      "event_name": "End of Summer Vacation (southern states like Bavaria, Baden-Württemberg)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-08",
-      "country": "AT",
-      "event_name": "Start of New School Year (last states)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-09-15",
       "country": "SK",
-      "event_name": "Our Lady of Sorrows",
+      "event_name": "Свято Пресвятої Діви Марії Скорботної, покровительки Словаччини",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-09-19",
       "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Start",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-20",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-21",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-22",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-23",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
+      "event_name": "Октоберфест у Мюнхені (початок)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-09-24",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
+      "country": "UA",
+      "event_name": "Львівський фестиваль кави (орієнтовний початок)",
       "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-25",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-26",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-09-27",
       "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
+      "event_name": "Берлінський марафон",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-09-28",
+      "date": "2026-10-03",
       "country": "DE",
-      "event_name": "Start of Autumn Vacation (some northern/eastern states)",
+      "event_name": "День німецької єдності",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-04",
+      "country": "DE",
+      "event_name": "Октоберфест у Мюнхені (завершення)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-05",
+      "country": "DE",
+      "event_name": "Початок осінніх канікул (Herbstferien) у деяких федеральних землях (напр., Берлін, Бранденбург, Гамбург, Бремен, Нижня Саксонія, Шлезвіг-Гольштейн, Мекленбург-Передня Померанія)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-09-28",
+      "date": "2026-10-06",
       "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-29",
-      "country": "DE",
-      "event_name": "Oktoberfest (Munich) - Continues",
-      "event_type": "festival",
+      "event_name": "Завершення осінніх канікул (Herbstferien) у Мекленбург-Передній Померанії (інші регіони тривають)",
+      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     }
   ]
