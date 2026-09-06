@@ -1,85 +1,239 @@
 {
-  "generated_at": "2026-08-23T03:04:49.292Z",
-  "from": "2026-08-23",
-  "to": "2026-10-06",
+  "generated_at": "2026-09-06T06:57:38.481Z",
+  "from": "2026-09-06",
+  "to": "2026-10-20",
   "range": 45,
   "events": [
     {
-      "date": "2026-08-24",
+      "date": "2026-09-06",
+      "country": "DE",
+      "event_name": "Ongoing discussions on integration programs for Ukrainian refugees (Germany)",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-09-08",
       "country": "UA",
-      "event_name": "День Незалежності України",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
+      "event_name": "Focus on humanitarian aid and support efforts in Ukraine",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
     },
     {
-      "date": "2026-09-01",
-      "country": "SK",
-      "event_name": "День Конституції Словацької Республіки",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-07",
+      "date": "2026-09-10",
       "country": "AT",
-      "event_name": "MQ Vienna Fashion Week (орієнтовний початок)",
-      "event_type": "festival",
+      "event_name": "Updates on temporary protection status and social benefits for Ukrainians (Austria)",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-09-12",
+      "country": "SK",
+      "event_name": "Information on language courses and job market access for Ukrainian refugees (Slovakia)",
+      "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-09-15",
       "country": "SK",
-      "event_name": "Свято Пресвятої Діви Марії Скорботної, покровительки Словаччини",
+      "event_name": "Day of Our Lady of Sorrows",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-09-19",
-      "country": "DE",
-      "event_name": "Октоберфест у Мюнхені (початок)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-09-24",
-      "country": "UA",
-      "event_name": "Львівський фестиваль кави (орієнтовний початок)",
-      "event_type": "festival",
+      "date": "2026-09-18",
+      "country": "HU",
+      "event_name": "Updates on border crossing regulations and support for arrivals from Ukraine (Hungary)",
+      "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-09-27",
+      "date": "2026-09-22",
       "country": "DE",
-      "event_name": "Берлінський марафон",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
+      "event_name": "Discussions on long-term housing solutions for Ukrainian refugees in Germany",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-09-26",
+      "country": "UA",
+      "event_name": "News on economic recovery and investment opportunities in Ukraine",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-09-29",
+      "country": "AT",
+      "event_name": "Ongoing debates on educational support for Ukrainian children in Austrian schools",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-10-01",
+      "country": "SK",
+      "event_name": "Review of social adaptation programs for Ukrainian refugees (Slovakia)",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-10-03",
       "country": "DE",
-      "event_name": "День німецької єдності",
+      "event_name": "Day of German Unity",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-04",
       "country": "DE",
-      "event_name": "Октоберфест у Мюнхені (завершення)",
+      "event_name": "Oktoberfest End (Munich)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-05",
       "country": "DE",
-      "event_name": "Початок осінніх канікул (Herbstferien) у деяких федеральних землях (напр., Берлін, Бранденбург, Гамбург, Бремен, Нижня Саксонія, Шлезвіг-Гольштейн, Мекленбург-Передня Померанія)",
+      "event_name": "Herbstferien start (Hamburg)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-05",
+      "country": "DE",
+      "event_name": "Herbstferien start (Schleswig-Holstein)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-06",
+      "country": "HU",
+      "event_name": "Updates on assistance for ethnic Hungarians from Transcarpathia (Hungary)",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-09",
       "country": "DE",
-      "event_name": "Завершення осінніх канікул (Herbstferien) у Мекленбург-Передній Померанії (інші регіони тривають)",
+      "event_name": "Policy discussions on vocational training for Ukrainian immigrants in Germany",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-10-12",
+      "country": "DE",
+      "event_name": "Herbstferien start (North Rhine-Westphalia)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-14",
+      "country": "UA",
+      "event_name": "Day of Defenders of Ukraine",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-14",
+      "country": "DE",
+      "event_name": "Frankfurter Buchmesse Start (Frankfurt)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-16",
+      "country": "DE",
+      "event_name": "Herbstferien end (Hamburg)",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-16",
+      "country": "DE",
+      "event_name": "Herbstferien end (Schleswig-Holstein)",
+      "event_type": "vacation_end",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-18",
+      "country": "DE",
+      "event_name": "Frankfurter Buchmesse End (Frankfurt)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Berlin)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Brandenburg)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Bremen)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Mecklenburg-Vorpommern)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Lower Saxony)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Rhineland-Palatinate)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Saarland)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Saxony)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Saxony-Anhalt)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-19",
+      "country": "DE",
+      "event_name": "Herbstferien start (Thuringia)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-10-20",
+      "country": "UA",
+      "event_name": "Ongoing discussions on post-war reconstruction and return incentives for Ukrainians abroad",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
     }
   ]
 }
