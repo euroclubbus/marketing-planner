@@ -1,280 +1,217 @@
 {
-  "generated_at": "2026-09-27T07:45:53.778Z",
-  "from": "2026-09-27",
-  "to": "2026-11-10",
+  "generated_at": "2026-10-04T07:55:15.189Z",
+  "from": "2026-10-04",
+  "to": "2026-11-17",
   "range": 45,
   "events": [
     {
-      "date": "2026-09-27",
-      "country": "UA",
-      "event_name": "Актуальні новини та оновлення для українців: ситуація в країні, зміни в законодавстві, питання безпеки.",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-09-27",
+      "date": "2026-10-04",
       "country": "DE",
-      "event_name": "Оновлення щодо статусу тимчасового захисту, соціальної підтримки та інтеграційних програм для українців у Німеччині.",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-09-27",
-      "country": "AT",
-      "event_name": "Актуальна інформація для українців в Австрії: зміни правил перебування, ринок праці, освітні можливості.",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-09-27",
-      "country": "SK",
-      "event_name": "Новини для українців у Словаччині: умови перебування, гуманітарна допомога, культурні події.",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-09-27",
-      "country": "HU",
-      "event_name": "Оновлення для українців в Угорщині: правовий статус, доступ до послуг, інформація про кордон.",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-10-03",
-      "country": "DE",
-      "event_name": "День Німецької Єдності (Tag der Deutschen Einheit)",
-      "event_type": "holiday",
+      "event_name": "End of Oktoberfest (Munich)",
+      "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-10-04",
+      "date": "2026-10-05",
       "country": "DE",
-      "event_name": "Закінчення Октоберфесту (Мюнхен) - орієнтовна дата, точна дата TBD",
-      "event_type": "festival",
+      "event_name": "Autumn School Holidays (Herbstferien) begin (some states, e.g., Berlin, Brandenburg)",
+      "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-12",
       "country": "DE",
-      "event_name": "Початок осінніх канікул (деякі федеральні землі, наприклад Гессен, Північний Рейн-Вестфалія)",
+      "event_name": "Autumn School Holidays (Herbstferien) begin (some states, e.g., Bavaria, Saxony)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-14",
       "country": "UA",
-      "event_name": "День захисників та захисниць України",
+      "event_name": "День захисників і захисниць України (Day of the Defenders of Ukraine)",
       "event_type": "holiday",
-      "relevance_for_bus_company": "medium"
+      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-14",
       "country": "DE",
-      "event_name": "Початок Франкфуртського книжкового ярмарку (Frankfurter Buchmesse) - орієнтовна дата, точна дата TBD",
+      "event_name": "Frankfurt Book Fair (general start date, subject to 2026 confirmation)",
       "event_type": "festival",
-      "relevance_for_bus_company": "medium"
+      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-18",
       "country": "DE",
-      "event_name": "Закінчення Франкфуртського книжкового ярмарку (Frankfurter Buchmesse) - орієнтовна дата, точна дата TBD",
+      "event_name": "Frankfurt Book Fair (general end date, subject to 2026 confirmation)",
       "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-10-19",
-      "country": "DE",
-      "event_name": "Початок осінніх канікул (багато федеральних земель, наприклад Берлін, Бранденбург, Гамбург, Нідерзаксен, Рейнланд-Пфальц)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-10-22",
-      "country": "AT",
-      "event_name": "Початок Міжнародного кінофестивалю Viennale (Відень) - орієнтовна дата, точна дата TBD",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-10-23",
-      "country": "DE",
-      "event_name": "Кінець осінніх канікул (деякі федеральні землі, наприклад Гессен)",
-      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-23",
       "country": "HU",
-      "event_name": "Національне свято Угорщини (День пам'яті Угорської революції 1956 року)",
+      "event_name": "Nemzeti ünnep (National Day, Hungarian Revolution of 1956 Memorial Day)",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-10-24",
-      "country": "DE",
-      "event_name": "Кінець осінніх канікул (деякі федеральні землі, наприклад Північний Рейн-Вестфалія)",
-      "event_type": "vacation_end",
+      "date": "2026-10-23",
+      "country": "HU",
+      "event_name": "Autumn School Holidays begin (typically around National Day)",
+      "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-26",
       "country": "UA",
-      "event_name": "Початок осінніх шкільних канікул (орієнтовно, точні дати TBD)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-10-26",
-      "country": "DE",
-      "event_name": "Початок осінніх канікул (деякі федеральні землі, наприклад Баден-Вюртемберг, Баварія, Саксонія-Ангальт)",
+      "event_name": "Autumn School Holidays begin (typical period)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-26",
       "country": "AT",
-      "event_name": "Національне свято Австрії (Nationalfeiertag)",
+      "event_name": "Nationalfeiertag (National Day)",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-26",
       "country": "AT",
-      "event_name": "Початок осінніх канікул (Herbstferien)",
+      "event_name": "Autumn School Holidays (Herbstferien) begin (around National Day)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-28",
       "country": "SK",
-      "event_name": "Початок осінніх канікул (Jesenné prázdniny)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-10-28",
-      "country": "HU",
-      "event_name": "Початок осінніх канікул (Őszi szünet)",
+      "event_name": "Autumn School Holidays begin (typically before All Saints' Day)",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-30",
       "country": "DE",
-      "event_name": "Кінець осінніх канікул (деякі федеральні землі, наприклад Гамбург, Рейнланд-Пфальц, Саарланд, Шлезвіг-Гольштейн, Баварія)",
+      "event_name": "Autumn School Holidays (Herbstferien) end (many states)",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-10-31",
       "country": "DE",
-      "event_name": "День Реформації (Reformationstag) - державне свято в деяких федеральних землях (наприклад, Бранденбург, Мекленбург-Передня Померанія, Саксонія, Тюрінгія)",
+      "event_name": "Reformationstag (Reformation Day, public holiday in some states)",
       "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-10-31",
-      "country": "DE",
-      "event_name": "Кінець осінніх канікул (деякі федеральні землі, наприклад Берлін, Бранденбург, Бремен, Нідерзаксен, Саксонія, Саксонія-Ангальт, Тюрінгія)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-10-31",
-      "country": "DE",
-      "event_name": "Святкування Хелловіну",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-10-31",
-      "country": "AT",
-      "event_name": "Святкування Хелловіну",
-      "event_type": "festival",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-01",
       "country": "UA",
-      "event_name": "Кінець осінніх шкільних канікул (орієнтовно, точні дати TBD)",
+      "event_name": "Autumn School Holidays end (typical period)",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-01",
       "country": "DE",
-      "event_name": "День всіх святих (Allerheiligen) - державне свято в деяких федеральних землях (наприклад, Баден-Вюртемберг, Баварія, Північний Рейн-Вестфалія, Рейнланд-Пфальц, Саарланд)",
+      "event_name": "Allerheiligen (All Saints' Day, public holiday in some states)",
       "event_type": "holiday",
-      "relevance_for_bus_company": "high"
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-01",
       "country": "AT",
-      "event_name": "День всіх святих (Allerheiligen)",
+      "event_name": "Allerheiligen (All Saints' Day)",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-01",
       "country": "SK",
-      "event_name": "Свято всіх святих (Sviatok všetkých svätých)",
+      "event_name": "Sviatok Všetkých svätých (All Saints' Day)",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-01",
       "country": "SK",
-      "event_name": "Кінець осінніх канікул (Jesenné prázdniny)",
+      "event_name": "Autumn School Holidays end",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-01",
       "country": "HU",
-      "event_name": "День всіх святих (Mindenszentek)",
+      "event_name": "Mindenszentek (All Saints' Day)",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-01",
       "country": "HU",
-      "event_name": "Кінець осінніх канікул (Őszi szünet)",
+      "event_name": "Autumn School Holidays end",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-02",
       "country": "AT",
-      "event_name": "Кінець осінніх канікул (Herbstferien)",
+      "event_name": "Allerseelen (All Souls' Day, observance, common extended holiday)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-02",
+      "country": "AT",
+      "event_name": "Autumn School Holidays (Herbstferien) end (around National Day)",
       "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-02",
-      "country": "SK",
-      "event_name": "День поминання померлих (Deň pamiatky zosnulých) - національний день пам'яті, не державне свято, але часто пов'язаний вихідний",
-      "event_type": "holiday",
+      "date": "2026-11-06",
+      "country": "DE",
+      "event_name": "Autumn School Holidays (Herbstferien) end (some states, e.g., Bavaria)",
+      "event_type": "vacation_end",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-02",
-      "country": "HU",
-      "event_name": "День поминання померлих (Halottak napja) - національний день пам'яті, не державне свято, але часто пов'язаний вихідний",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-04",
-      "country": "AT",
-      "event_name": "Закінчення Міжнародного кінофестивалю Viennale (Відень) - орієнтовна дата, точна дата TBD",
+      "date": "2026-11-11",
+      "country": "DE",
+      "event_name": "Start of Carnival Season (beginning at 11:11 in cities like Cologne, Mainz, Düsseldorf)",
       "event_type": "festival",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-11-07",
+      "date": "2026-11-11",
       "country": "DE",
-      "event_name": "Кінець осінніх канікул (деякі федеральні землі, наприклад Баден-Вюртемберг)",
-      "event_type": "vacation_end",
+      "event_name": "Martinstag / St. Martin's Day (lantern parades, regional celebrations)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-11",
+      "country": "AT",
+      "event_name": "Martinstag / St. Martin's Day (lantern parades, regional celebrations)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-11",
+      "country": "SK",
+      "event_name": "Sviatok svätého Martina / St. Martin's Day (observance, regional traditions)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-11",
+      "country": "HU",
+      "event_name": "Márton-nap / St. Martin's Day (observance, regional traditions)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-17",
+      "country": "SK",
+      "event_name": "Deň boja za slobodu a demokraciu (Day of the Fight for Freedom and Democracy)",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     }
   ]
