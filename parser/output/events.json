@@ -1,195 +1,279 @@
 {
-  "generated_at": "2026-11-01T08:53:06.398Z",
-  "from": "2026-11-01",
-  "to": "2026-12-15",
+  "generated_at": "2026-11-08T08:43:07.070Z",
+  "from": "2026-11-08",
+  "to": "2026-12-22",
   "range": 45,
   "events": [
     {
-      "date": "2026-11-01",
-      "country": "DE",
-      "event_name": "День усіх святих (Allerheiligen) - державне свято в деяких землях",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-01",
-      "country": "AT",
-      "event_name": "День усіх святих (Allerheiligen) - державне свято",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-01",
-      "country": "SK",
-      "event_name": "День усіх святих (Sviatok Všetkých svätých) - державне свято",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-01",
-      "country": "HU",
-      "event_name": "День усіх святих (Mindenszentek) - державне свято",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-02",
-      "country": "AT",
-      "event_name": "Закінчення осінніх шкільних канікул (Herbstferien) - орієнтовна дата",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-02",
-      "country": "SK",
-      "event_name": "Закінчення осінніх шкільних канікул (Jesenné prázdniny) - орієнтовна дата",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-02",
-      "country": "HU",
-      "event_name": "Закінчення осінніх шкільних канікул (Őszi szünet) - орієнтовна дата",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-03",
+      "date": "2026-11-08",
       "country": "UA",
-      "event_name": "Новини: Оновлення щодо інтеграційних програм для українців за кордоном",
+      "event_name": "Ongoing: Government initiatives for social support to internally displaced persons (IDPs)",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-08",
       "country": "DE",
-      "event_name": "Закінчення осінніх шкільних канікул (Herbstferien) - орієнтовна дата (різниться по землях)",
-      "event_type": "vacation_end",
+      "event_name": "Ongoing: Discussions on the extension and conditions of temporary protection for Ukrainians",
+      "event_type": "news",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-08",
-      "country": "UA",
-      "event_name": "Закінчення осінніх шкільних канікул - орієнтовна дата (різниться по регіонах)",
-      "event_type": "vacation_end",
-      "relevance_for_bus_company": "high"
+      "country": "AT",
+      "event_name": "Ongoing: Updates on federal support programs for Ukrainian refugees' integration",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-11-10",
-      "country": "DE",
-      "event_name": "Новини: Обговорення майбутнього статусу тимчасового захисту для українських біженців у ЄС",
+      "date": "2026-11-08",
+      "country": "SK",
+      "event_name": "Ongoing: Information on access to employment and social benefits for Ukrainians",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-08",
+      "country": "HU",
+      "event_name": "Ongoing: Policies regarding residency permits and humanitarian aid for Ukrainian citizens",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-15",
-      "country": "AT",
-      "event_name": "Новини: Огляд змін у правилах перебування для українців в Австрії",
-      "event_type": "news",
+      "country": "DE",
+      "event_name": "Approximate start of regional pre-Christmas markets (e.g., smaller towns in Bavaria)",
+      "event_type": "festival",
       "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-11-17",
-      "country": "SK",
-      "event_name": "День боротьби за свободу і демократію (Deň boja za slobodu a demokraciu) - державне свято",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-18",
       "country": "DE",
-      "event_name": "День покаяння та молитви (Buß- und Bettag) - державне свято в Саксонії",
+      "event_name": "Buß- und Bettag (Repentance and Prayer Day) - Public Holiday only in Saxony",
       "event_type": "holiday",
-      "relevance_for_bus_company": "high"
+      "relevance_for_bus_company": "low"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-11-20",
       "country": "DE",
-      "event_name": "Початок роботи Різдвяних ярмарків у великих містах Німеччини (орієнтовно)",
+      "event_name": "Approximate opening of major Christmas markets (e.g., Nuremberg, Cologne, Berlin)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-11-20",
       "country": "AT",
-      "event_name": "Початок роботи Різдвяних ярмарків у Відні та інших містах Австрії (орієнтовно)",
+      "event_name": "Approximate opening of major Christmas markets (e.g., Vienna, Salzburg)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-24",
-      "country": "HU",
-      "event_name": "Початок роботи Різдвяних ярмарків у Будапешті та інших містах Угорщини (орієнтовно)",
+      "date": "2026-11-20",
+      "country": "SK",
+      "event_name": "Approximate opening of major Christmas markets (e.g., Bratislava)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-11-20",
+      "country": "HU",
+      "event_name": "Approximate opening of major Christmas markets (e.g., Budapest)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-11-21",
+      "country": "UA",
+      "event_name": "День Гідності та Свободи (Day of Dignity and Freedom)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-11-25",
+      "country": "UA",
+      "event_name": "Ongoing: Discussions on post-war reconstruction and potential return incentives",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-25",
+      "country": "DE",
+      "event_name": "Ongoing: Policy updates regarding access to education and training for Ukrainian adults",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-11-25",
+      "country": "AT",
+      "event_name": "Ongoing: Initiatives for psychological support and healthcare access for displaced Ukrainians",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-25",
       "country": "SK",
-      "event_name": "Початок роботи Різдвяних ярмарків у Братиславі та інших містах Словаччини (орієнтовно)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-28",
-      "country": "UA",
-      "event_name": "Новини: Звіти про гуманітарну допомогу та проекти відновлення України",
+      "event_name": "Ongoing: Changes in rules for family reunification and visa applications for Ukrainians",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-12-01",
-      "country": "DE",
-      "event_name": "Тривають Різдвяні ярмарки по всій Німеччині",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-01",
-      "country": "AT",
-      "event_name": "Тривають Різдвяні ярмарки по всій Австрії",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-01",
-      "country": "SK",
-      "event_name": "Тривають Різдвяні ярмарки по всій Словаччині",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-01",
+      "date": "2026-11-25",
       "country": "HU",
-      "event_name": "Тривають Різдвяні ярмарки по всій Угорщині",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-05",
-      "country": "SK",
-      "event_name": "Новини: Актуальна інформація для українських біженців щодо соціальних виплат та підтримки",
+      "event_name": "Ongoing: Updates on humanitarian corridors and border crossing procedures with Ukraine",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-06",
+      "country": "UA",
+      "event_name": "День Святого Миколая (St. Nicholas Day) - Public Holiday",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-12-08",
       "country": "AT",
-      "event_name": "Непорочне Зачаття Діви Марії (Mariä Empfängnis) - державне свято (магазини можуть бути відкриті)",
+      "event_name": "Mariä Empfängnis (Immaculate Conception) - Public Holiday",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-08",
+      "country": "SK",
+      "event_name": "Nepoškvrnené počatie Panny Márie (Immaculate Conception) - Public Holiday",
       "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-12-10",
-      "country": "HU",
-      "event_name": "Новини: Оновлення про програми вивчення мови та інтеграції для українців",
+      "country": "UA",
+      "event_name": "Ongoing: Diplomatic efforts and peace negotiations updates potentially affecting travel to/from conflict zones",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-12-15",
+      "date": "2026-12-10",
+      "country": "DE",
+      "event_name": "Ongoing: Discussions within the Bundestag on long-term integration strategies for refugees",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-10",
+      "country": "AT",
+      "event_name": "Ongoing: Updates on the availability of free public transport for Ukrainian refugees in specific regions",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-12-10",
+      "country": "SK",
+      "event_name": "Ongoing: Government initiatives to match Ukrainian professionals with local job market needs",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-10",
+      "country": "HU",
+      "event_name": "Ongoing: Updates on the allocation of EU funds for refugee support programs",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-19",
+      "country": "DE",
+      "event_name": "Approximate start of Christmas school holidays (varies by state)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-19",
+      "country": "AT",
+      "event_name": "Approximate start of Christmas school holidays",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-19",
+      "country": "SK",
+      "event_name": "Approximate start of Christmas school holidays",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-19",
+      "country": "HU",
+      "event_name": "Approximate start of Christmas school holidays",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-20",
       "country": "UA",
-      "event_name": "Новини: Огляд політичної ситуації та міжнародної підтримки України",
+      "event_name": "Intensified travel for Christmas and New Year holidays preparations",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-20",
+      "country": "DE",
+      "event_name": "Peak travel period for Christmas holidays and visiting Christmas markets",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-20",
+      "country": "AT",
+      "event_name": "Peak travel period for Christmas holidays and visiting Christmas markets",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-20",
+      "country": "SK",
+      "event_name": "Peak travel period for Christmas holidays and visiting Christmas markets",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-20",
+      "country": "HU",
+      "event_name": "Peak travel period for Christmas holidays and visiting Christmas markets",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-22",
+      "country": "UA",
+      "event_name": "Ongoing: Reports on the state of infrastructure and transport links within Ukraine ahead of winter holidays",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-22",
+      "country": "DE",
+      "event_name": "Ongoing: Public awareness campaigns on travel safety and regulations during winter season",
+      "event_type": "news",
+      "relevance_for_bus_company": "low"
+    },
+    {
+      "date": "2026-12-22",
+      "country": "AT",
+      "event_name": "Ongoing: Weather forecasts and travel advisories for the holiday season",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
+    },
+    {
+      "date": "2026-12-22",
+      "country": "SK",
+      "event_name": "Ongoing: Border control measures and waiting times at EU external borders ahead of holidays",
+      "event_type": "news",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-22",
+      "country": "HU",
+      "event_name": "Ongoing: Discussions on the humanitarian situation and aid distribution at border regions",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     }
