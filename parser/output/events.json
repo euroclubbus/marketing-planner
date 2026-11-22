@@ -1,370 +1,272 @@
 {
-  "generated_at": "2026-11-15T08:56:09.524Z",
-  "from": "2026-11-15",
-  "to": "2026-12-29",
+  "generated_at": "2026-11-22T09:29:44.543Z",
+  "from": "2026-11-22",
+  "to": "2027-01-05",
   "range": 45,
   "events": [
     {
-      "date": "2026-11-15",
-      "country": "AT",
-      "event_name": "Leopolditag (Feiertag in Vienna and Lower Austria, not federal, falls on a Sunday)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "low"
-    },
-    {
-      "date": "2026-11-15",
-      "country": "UA",
-      "event_name": "Discussions on humanitarian aid and support for internally displaced persons continue (general news)",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-11-17",
-      "country": "SK",
-      "event_name": "Day of the Struggle for Freedom and Democracy (state holiday)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-17",
-      "country": "AT",
-      "event_name": "Start of major Christmas Markets in Vienna (e.g., Rathausplatz, Schönbrunn)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-11-18",
+      "date": "2026-11-22",
       "country": "DE",
-      "event_name": "Buß- und Bettag (Repentance and Prayer Day, holiday only in Saxony)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "low"
-    },
-    {
-      "date": "2026-11-19",
-      "country": "UA",
-      "event_name": "St. Michael's Day (Archangel Michael) - Kyiv's patron day, often celebrated with events/fair (cultural significance)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-11-19",
-      "country": "HU",
-      "event_name": "Start of Advent (Christmas) Fairs in Budapest (e.g., Vörösmarty Square, St. Stephen's Basilica)",
+      "event_name": "Початок роботи різдвяних ярмарків (Weihnachtsmärkte) у багатьох містах Німеччини",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-11-22",
-      "country": "DE",
-      "event_name": "Totensonntag / Ewigkeitssonntag (Protestant Memorial Day for the Dead)",
-      "event_type": "news",
-      "relevance_for_bus_company": "low"
+      "country": "AT",
+      "event_name": "Початок роботи різдвяних ярмарків (Christkindlmärkte) в Австрії (напр., Відень, Зальцбург)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-11-22",
       "country": "SK",
-      "event_name": "Start of Christmas Markets in major cities (e.g., Bratislava, Košice)",
+      "event_name": "Початок роботи різдвяних ярмарків (Vianočné trhy) у Словаччині (напр., Братислава)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-11-24",
-      "country": "DE",
-      "event_name": "Start of Christmas Markets season in many major cities (e.g., Nuremberg, Cologne, Berlin)",
+      "date": "2026-11-22",
+      "country": "HU",
+      "event_name": "Початок роботи різдвяних ярмарків (Karácsonyi vásár) в Угорщині (напр., Будапешт)",
       "event_type": "festival",
       "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-11-22",
+      "country": "UA",
+      "event_name": "Початок роботи різдвяних ярмарків та святкових локацій (Київ, Львів)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-11-27",
+      "country": "DE",
+      "event_name": "Очікувані обговорення щодо продовження або зміни статусу тимчасового захисту українців в ЄС",
+      "event_type": "news",
+      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-28",
-      "country": "UA",
-      "event_name": "Holodomor Memorial Day (last Saturday of November)",
-      "event_type": "news",
-      "relevance_for_bus_company": "low"
-    },
-    {
-      "date": "2026-11-29",
-      "country": "DE",
-      "event_name": "First Advent Sunday",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-11-29",
       "country": "AT",
-      "event_name": "First Advent Sunday",
+      "event_name": "Можливі оновлення щодо програм інтеграції та соціальної допомоги для українців в Австрії",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-11-29",
       "country": "SK",
-      "event_name": "First Advent Sunday",
+      "event_name": "Актуалізація інформації щодо умов перебування та доступу до ринку праці для українців у Словаччині",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-11-29",
+      "date": "2026-11-30",
       "country": "HU",
-      "event_name": "First Advent Sunday",
+      "event_name": "Обговорення питань інтеграції та допомоги українським біженцям в Угорщині",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-12-01",
       "country": "UA",
-      "event_name": "Launch of Winter Holiday Season and Christmas Markets in major cities (e.g., Kyiv, Lviv)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-06",
-      "country": "UA",
-      "event_name": "Armed Forces Day of Ukraine",
+      "event_name": "Оновлення щодо правил перетину кордону Україна-ЄС та митних процедур",
       "event_type": "news",
-      "relevance_for_bus_company": "low"
+      "relevance_for_bus_company": "medium"
     },
     {
-      "date": "2026-12-06",
+      "date": "2026-12-21",
       "country": "DE",
-      "event_name": "St. Nicholas Day (Nikolaustag)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-06",
-      "country": "AT",
-      "event_name": "St. Nicholas Day (Nikolaustag) and Krampus Runs in some regions",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-06",
-      "country": "SK",
-      "event_name": "St. Nicholas Day (Mikuláš)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-06",
-      "country": "HU",
-      "event_name": "St. Nicholas Day (Mikulás)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-08",
-      "country": "AT",
-      "event_name": "Immaculate Conception (Mariä Empfängnis) - state holiday, shops often open",
-      "event_type": "holiday",
+      "event_name": "Початок зимових шкільних канікул (орієнтовно, регіональні відмінності)",
+      "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-19",
-      "country": "UA",
-      "event_name": "St. Nicholas Day (widely celebrated, especially by children)",
-      "event_type": "festival",
-      "relevance_for_bus_company": "medium"
     },
     {
       "date": "2026-12-22",
       "country": "HU",
-      "event_name": "Expected start of Winter School Holidays",
+      "event_name": "Початок зимових шкільних канікул",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-12-23",
-      "country": "DE",
-      "event_name": "Expected start of Winter School Holidays (state-dependent, general period)",
+      "country": "SK",
+      "event_name": "Початок зимових шкільних канікул",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-24",
       "country": "AT",
-      "event_name": "Preparations for Christmas Eve and last-minute shopping",
-      "event_type": "news",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-23",
-      "country": "SK",
-      "event_name": "Expected start of Winter School Holidays",
+      "event_name": "Початок зимових шкільних канікул",
       "event_type": "vacation_start",
       "relevance_for_bus_company": "high"
     },
     {
       "date": "2026-12-24",
       "country": "DE",
-      "event_name": "Christmas Eve (Heiligabend - often half-day work, shops close early)",
-      "event_type": "news",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-24",
-      "country": "AT",
-      "event_name": "Christmas Eve (Heiliger Abend - shops close early, public transport reduced)",
-      "event_type": "news",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-24",
-      "country": "AT",
-      "event_name": "Expected start of Winter School Holidays",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-24",
-      "country": "SK",
-      "event_name": "Christmas Eve (Štedrý deň) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-24",
-      "country": "HU",
-      "event_name": "Christmas Eve (Szenteste) - generally a half-day working, shops close early",
-      "event_type": "news",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-25",
-      "country": "UA",
-      "event_name": "Christmas Day (state holiday, Gregorian calendar)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-25",
-      "country": "DE",
-      "event_name": "First Day of Christmas (state holiday)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-25",
-      "country": "AT",
-      "event_name": "Christmas Day (Christtag) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-25",
-      "country": "SK",
-      "event_name": "Christmas Day (Prvý sviatok vianočný) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-25",
-      "country": "HU",
-      "event_name": "Christmas Day (Karácsony) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-26",
-      "country": "DE",
-      "event_name": "Second Day of Christmas (state holiday)",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-26",
-      "country": "AT",
-      "event_name": "St. Stephen's Day (Stefanitag) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-26",
-      "country": "SK",
-      "event_name": "St. Stephen's Day (Druhý sviatok vianočný) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-26",
-      "country": "HU",
-      "event_name": "Second Day of Christmas (Karácsony másnapja) - state holiday",
-      "event_type": "holiday",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-27",
-      "country": "UA",
-      "event_name": "Expected start of Winter School Holidays (general period, specific dates vary)",
-      "event_type": "vacation_start",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-27",
-      "country": "DE",
-      "event_name": "Ongoing Christmas Markets (some remain open until Dec 30/31)",
+      "event_name": "Закінчення роботи більшості різдвяних ярмарків (Weihnachtsmärkte)",
       "event_type": "festival",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-27",
-      "country": "SK",
-      "event_name": "Post-Christmas travel surge and lead-up to New Year's Eve",
-      "event_type": "news",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-25",
       "country": "UA",
-      "event_name": "Increased travel demand for New Year's Eve/Winter Holidays",
-      "event_type": "news",
+      "event_name": "Різдво Христове (за григоріанським календарем)",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-25",
       "country": "DE",
-      "event_name": "Increased travel demand for New Year's Eve/Winter Holidays and return travel from Christmas",
-      "event_type": "news",
+      "event_name": "1. Weihnachtstag (Різдво)",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-25",
       "country": "AT",
-      "event_name": "Start of intense New Year's travel period and ski season in Alps",
-      "event_type": "news",
+      "event_name": "Christtag (Різдво)",
+      "event_type": "holiday",
       "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-28",
-      "country": "HU",
-      "event_name": "Lead-up to New Year's Eve, increased travel and shopping",
-      "event_type": "news",
-      "relevance_for_bus_company": "high"
-    },
-    {
-      "date": "2026-12-29",
-      "country": "DE",
-      "event_name": "Ongoing discussions on integration support for Ukrainian refugees",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-29",
-      "country": "AT",
-      "event_name": "Discussions on the extension of temporary protection status for Ukrainian refugees (EU-wide context)",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
-    },
-    {
-      "date": "2026-12-29",
+      "date": "2026-12-25",
       "country": "SK",
-      "event_name": "Updates on humanitarian aid programs for Ukrainian refugees",
-      "event_type": "news",
-      "relevance_for_bus_company": "medium"
+      "event_name": "Prvý sviatok vianočný (Різдво)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
     },
     {
-      "date": "2026-12-29",
+      "date": "2026-12-25",
       "country": "HU",
-      "event_name": "Border crossing updates and refugee support discussions relevant to Ukrainian community",
+      "event_name": "Karácsony (1. nap) (Різдво)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-25",
+      "country": "UA",
+      "event_name": "Початок зимових шкільних канікул (орієнтовно, регіональні відмінності)",
+      "event_type": "vacation_start",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-26",
+      "country": "DE",
+      "event_name": "2. Weihnachtstag (Другий день Різдва)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-26",
+      "country": "AT",
+      "event_name": "Stefanitag (День Святого Стефана)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-26",
+      "country": "SK",
+      "event_name": "Druhý sviatok vianočný (Другий день Різдва)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-26",
+      "country": "HU",
+      "event_name": "Karácsony (2. nap) (Другий день Різдва)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-26",
+      "country": "AT",
+      "event_name": "Закінчення роботи деяких різдвяних ярмарків (Christkindlmärkte)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "country": "UA",
+      "event_name": "Новорічні святкування та концерти у великих містах",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "country": "DE",
+      "event_name": "Святкування Нового року (Silvester) у великих містах (Берлін, Мюнхен)",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "country": "AT",
+      "event_name": "Святкування Нового року (Silvesterpfad) у Відні та інших містах",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "country": "SK",
+      "event_name": "Новорічні святкування (Silvester) у Братиславі та інших містах",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2026-12-31",
+      "country": "HU",
+      "event_name": "Святкування Нового року (Szilveszter) у Будапешті",
+      "event_type": "festival",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-01",
+      "country": "UA",
+      "event_name": "Новий рік",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-01",
+      "country": "DE",
+      "event_name": "Neujahr (Новий рік)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-01",
+      "country": "AT",
+      "event_name": "Neujahr (Новий рік)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-01",
+      "country": "SK",
+      "event_name": "Deň vzniku Slovenskej republiky (Новий рік та День створення СР)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-01",
+      "country": "HU",
+      "event_name": "Újév (Новий рік)",
+      "event_type": "holiday",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-03",
+      "country": "HU",
+      "event_name": "Закінчення зимових шкільних канікул",
+      "event_type": "vacation_end",
+      "relevance_for_bus_company": "high"
+    },
+    {
+      "date": "2027-01-05",
+      "country": "DE",
+      "event_name": "Актуалізація інформації щодо умов перетину кордонів та митних правил для пасажирів",
       "event_type": "news",
       "relevance_for_bus_company": "medium"
     }
